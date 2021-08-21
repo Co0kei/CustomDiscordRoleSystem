@@ -32,9 +32,7 @@ async def on_ready():
     bot.Ongoing_TrickTwitch_CustomRoles = {}
     bot.TrickTwitch_CustomRoles_RedeemedUserList = []
     bot.bannedRoleWords = []
-
-
-#MONGO DB
+    
 MongoDB = motor.motor_asyncio.AsyncIOMotorClient(MONGO_URL,tlsCAFile=certifi.where()) #To stop the [SSL: CERTIFICATE_VERIFY_FAILED] ERRORS
 db=MongoDB["Tricked-Bot"]
 bot.db=db
